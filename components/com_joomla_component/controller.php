@@ -18,4 +18,6 @@ use Joomla\CMS\MVC\Controller\BaseController;
  * @package   joomla_component
  * @since     1.0.0
  */
-class Joomla_componentController extends BaseController { }
+class Joomla_componentController extends BaseController
+{
+}

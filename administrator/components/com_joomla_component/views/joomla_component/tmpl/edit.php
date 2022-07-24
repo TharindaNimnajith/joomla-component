@@ -36,18 +36,18 @@ JS
       method="post" name="adminForm" enctype="multipart/form-data" id="adminForm" class="form-validate">
 	<?php echo LayoutHelper::render('joomla.edit.title_alias', $this); ?>
 
-	<hr/>
+    <hr/>
 
-	<div class="row-fluid">
-		<div class="span9">
+    <div class="row-fluid">
+        <div class="span9">
 			<?php echo $this->form->getInput('description'); ?>
-		</div>
-		<div class="span3">
+        </div>
+        <div class="span3">
 			<?php echo LayoutHelper::render('joomla.edit.global', $this); ?>
-		</div>
-	</div>
+        </div>
+    </div>
 
-	<input type="hidden" name="task" value=""/>
+    <input type="hidden" name="task" value=""/>
 	<?php echo $this->form->getInput('id'); ?>
 	<?php echo HTMLHelper::_('form.token'); ?>
 </form>

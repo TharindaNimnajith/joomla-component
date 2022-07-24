@@ -43,7 +43,8 @@ class Joomla_componentControllerJoomla_components extends AdminController
 		$name = 'Joomla_component',
 		$prefix = 'Joomla_componentsModel',
 		$config = ['ignore_request' => true]
-	) {
+	)
+	{
 		return parent::getModel($name, $prefix, $config);
 	}
 }

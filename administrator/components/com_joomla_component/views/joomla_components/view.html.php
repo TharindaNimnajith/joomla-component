@@ -28,53 +28,12 @@ use Joomla\Registry\Registry;
 class Joomla_componentViewJoomla_components extends HtmlView
 {
 	/**
-	 * Array with profiles
-	 *
-	 * @var    array
-	 * @since  1.0.0
-	 */
-	protected $items = [];
-
-	/**
-	 * The model state
-	 *
-	 * @var    Registry
-	 * @since  1.0.0
-	 */
-	protected $state;
-
-	/**
-	 * Pagination object
-	 *
-	 * @var    Pagination
-	 * @since  1.0.0
-	 */
-	protected $pagination;
-
-	/**
-	 * Companies helper
-	 *
-	 * @var    Joomla_componentHelper
-	 * @since  1.0.0
-	 */
-	protected $helper;
-
-	/**
-	 * The sidebar to show
-	 *
-	 * @var    string
-	 * @since  1.0.0
-	 */
-	protected $sidebar = '';
-
-	/**
 	 * Form with filters
 	 *
 	 * @var    Form
 	 * @since  1.0.0
 	 */
 	public $filterForm;
-
 	/**
 	 * List of active filters
 	 *
@@ -82,7 +41,41 @@ class Joomla_componentViewJoomla_components extends HtmlView
 	 * @since  1.0.0
 	 */
 	public $activeFilters = [];
-
+	/**
+	 * Array with profiles
+	 *
+	 * @var    array
+	 * @since  1.0.0
+	 */
+	protected $items = [];
+	/**
+	 * The model state
+	 *
+	 * @var    Registry
+	 * @since  1.0.0
+	 */
+	protected $state;
+	/**
+	 * Pagination object
+	 *
+	 * @var    Pagination
+	 * @since  1.0.0
+	 */
+	protected $pagination;
+	/**
+	 * Companies helper
+	 *
+	 * @var    Joomla_componentHelper
+	 * @since  1.0.0
+	 */
+	protected $helper;
+	/**
+	 * The sidebar to show
+	 *
+	 * @var    string
+	 * @since  1.0.0
+	 */
+	protected $sidebar = '';
 	/**
 	 * Actions registry
 	 *
@@ -98,11 +91,11 @@ class Joomla_componentViewJoomla_components extends HtmlView
 	 *
 	 * @return  mixed  A string if successful, otherwise a JError object.
 	 *
-	 * @since   1.0.0
-	 *
 	 * @throws Exception
 	 *
-	 * @see    fetch()
+	 * @since   1.0.0
+	 *
+	 * @see     fetch()
 	 */
 	public function display($tpl = null)
 	{

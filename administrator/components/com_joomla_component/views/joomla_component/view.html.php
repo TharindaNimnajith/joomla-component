@@ -57,9 +57,9 @@ class Joomla_componentViewJoomla_component extends HtmlView
 	 *
 	 * @return  mixed  A string if successful, otherwise a JError object.
 	 *
-	 * @since   1.0.0
-	 *
 	 * @throws  Exception
+	 *
+	 * @since   1.0.0
 	 *
 	 * @see     fetch()
 	 */
@@ -83,9 +83,9 @@ class Joomla_componentViewJoomla_component extends HtmlView
 	 *
 	 * @return  void
 	 *
+	 * @throws  Exception
 	 * @since   1.0.0
 	 *
-	 * @throws  Exception
 	 */
 	private function toolbar()
 	{

@@ -60,9 +60,9 @@ class Joomla_componentModelJoomla_component extends AdminModel
 	 *
 	 * @return    mixed    The data for the form.
 	 *
+	 * @throws  Exception
 	 * @since   1.0.0
 	 *
-	 * @throws  Exception
 	 */
 	protected function loadFormData()
 	{
